@@ -1,0 +1,48 @@
+body{
+    padding-top:60px;
+    background: linear-gradient(#2196f3 , #e91e63);
+    /* box-sizing:border-box; */
+}
+
+#look{
+  width:360px;
+  margin-top:10px;    
+}
+
+.rectangle {
+    width: 360px;
+    height: 450px;
+    /* border: 2px solid #1a1a1a;*/
+    box-shadow: 10px 10px 20px 10px;
+    background-color: transparent;
+    padding:10px;
+  }
+
+h2{
+    color:white;
+    text-align:center;
+    margin-bottom:20px;
+
+}
+
+.screenInput {
+    width: 330px;
+    height: 50px;
+    border-radius: 10px;
+    box-shadow: 10px 5px 20px 5px;
+    font-size: 1.5em;
+    text-align: right;
+    margin-left:6px;
+    margin-bottom:20px;
+    border-style: none;
+  }
+
+.btn-danger {
+    background-color: #887C7B;
+    border-color: #343436;
+    width: 60px;
+    height: 50px;
+    font-size: 1.25em;
+    margin-top: 0.1em;
+  }
+  

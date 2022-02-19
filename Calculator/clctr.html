@@ -1,0 +1,101 @@
+<html>
+    <head>
+        <title>Calculator</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+        <link rel="stylesheet" href="clctr.css"/>
+        <script src="clctr.js"></script>        
+    </head>
+    <body>
+        <div class="container" id="look">
+            <div class="row"  >
+                    <div class="rectangle">
+                    <div>
+                        <h2>My Calculator</h2>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <input type="text" id="textarea" class="screeninput"/>
+                        </div>
+                    </div>                    
+                    
+                    <div class="row">
+                        <div class="col-xs-3">
+                        <button id="reset" class="btn btn-danger inputKey" value="C" onclick="clr()">C</button>
+                        </div>
+                        <div class="col-xs-3">
+                
+                        </div>
+                        <div class="col-xs-3"></div>
+                        <div class="col-xs-3">
+                        <button id="backspace" class="btn btn-danger inputKey" value="CE" onclick="backspace()">CE</button>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-3">
+                        <button class="btn btn-danger inputKey" value="7" onclick="display('7')">7</button>
+                        </div>
+                        <div class="col-xs-3">
+                        <button class="btn btn-danger inputKey" value="8" onclick="display('8')">8</button>
+                        </div>
+                        <div class="col-xs-3">
+                        <button class="btn btn-danger inputKey" value="9" onclick="display('9')">9</button>
+                        </div>
+                        <div class="col-xs-3">
+                        <button id="multiply" class="btn btn-danger inputKey" value="*" onclick="display('*')" onclick="Multi()"><i class="fa fa-times"></i></button>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-3">
+                        <button class="btn btn-danger inputKey" value="4" onclick="display('4')">4</button>
+                        </div>
+                        <div class="col-xs-3">
+                        <button class="btn btn-danger inputKey" value="5"onclick="display('5')">5</button>
+                        </div>
+                        <div class="col-xs-3">
+                        <button class="btn btn-danger inputKey" value="6" onclick="display('6')">6</button>
+                        </div>
+                        <div class="col-xs-3">
+                        <button id="subtract" class="btn btn-danger inputKey " value="-" onclick="display('-')" onclick="Sub()"> <i class="fa fa-minus"></i></button>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-3">
+                        <button class="btn btn-danger inputKey" value="1" onclick="display('1')">1</button>
+                        </div>
+                        <div class="col-xs-3">
+                        <button class="btn btn-danger inputKey" value="2" onclick="display('2')">2</button>
+                        </div>
+                        <div class="col-xs-3">
+                        <button class="btn btn-danger inputKey" value="3" onclick="display('3')">3</button>
+                        </div>
+                        <div class="col-xs-3">
+                        <button id="addition" class="btn btn-danger inputKey " value="+"  onclick="display('+')" onclick="Add()"> <i class="fa fa-plus"></i></button>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-3">
+                        <button id="equalsTo" class="btn btn-danger inputKey " value="EQ" onclick="calculate()"><i class="fa fa-pause fa-rotate-90"></i></button>
+                        </div>
+                        <div class="col-xs-3">
+                        <button class="btn btn-danger inputKey" value="0" onclick="display('0')" >0</button>
+                        </div>
+                        <div class="col-xs-3">
+                        <button id="division" class="btn btn-danger inputKey " value="/" onclick="display('/')" onclick="Div()">/</button>
+                        </div>
+                        <div class="col-xs-3">
+                        <button id="modulus" class="btn btn-danger inputKey " value="%" onclick="display('%')" onclick="Mod()"> <i class="fa fa-percent"></i></button>
+                        </div>
+                    </div>
+                
+            
+                </div>
+                
+            </div>
+        </div>
+    </body>
+    
+
+</html>  
